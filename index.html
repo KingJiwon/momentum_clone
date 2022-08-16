@@ -5,32 +5,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Momentum</title>
   </head>
   <body>
-    <form class="login-form hidden">
-      <input
-        type="text"
-        required
-        placeholder="What is your name?"
-        maxlength="15"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-    <h2 class="clock">00:00:00</h2>
-    <h1 class="greeting hidden"></h1>
-    <form class="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul class="todo-list"></ul>
-    <div class="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <div class="weather">
-      <span></span>
-      <span></span>
-    </div>
+    <header>
+      <form class="login-form hidden">
+        <input
+          type="text"
+          required
+          placeholder="What is your name?"
+          maxlength="15"
+        />
+        <input type="submit" value="Log In" />
+      </form>
+      <h1 class="clock">00:00:00</h2>
+      <div class="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <h2 class="greeting hidden"></h1>
+    </header>
+    <main>
+      <div class="todo">
+      <form class="todo-form">
+        <input 
+        class="todo-month"
+        type="number"
+        placeholder="Month"
+        min="1"
+        max="12"
+        maxlength="2"
+        required/>
+        <input 
+        class="todo-day"
+        type="number"
+        placeholder="Day"
+        min="1"
+        max="31"
+        maxlength="2"
+        required/>
+        <input
+          class="todo-input"
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+        <input
+          class="submit"
+          type="submit"/>
+      </form>
+      <ul class="todo-list"></ul>
+      </div>
+      <div class="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </main>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
