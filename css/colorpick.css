@@ -1,0 +1,85 @@
+.pick_color {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 7px 7px;
+  margin: 5px 0px;
+  border-radius: 10px;
+}
+
+.pick_color > * :hover {
+  cursor: crosshair;
+}
+
+.color_fisrt_line {
+  display: flex;
+}
+
+.color_second_line {
+  display: flex;
+  margin-top: -1px;
+}
+
+.white {
+  background-color: white;
+}
+
+.lightpurple {
+  background-color: rgba(156, 158, 255, 0.8);
+  margin: 0px -1px;
+}
+
+.blue {
+  background-color: rgba(36, 99, 192, 0.8);
+}
+
+.lightgreen {
+  background-color: rgba(45, 255, 162, 0.8);
+}
+
+.tomato {
+  background-color: rgba(253, 95, 73, 0.8);
+  margin: 0px -1px;
+}
+
+.darkpink {
+  background-color: rgba(236, 59, 89, 0.7);
+}
+
+.white,
+.lightpurple,
+.lightgreen,
+.blue,
+.tomato,
+.darkpink {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+}
+
+.white_pick {
+  background-color: white;
+  color: black;
+}
+
+.lightpurple_pick {
+  background-color: rgba(156, 158, 255, 0.8);
+}
+
+.blue_pick {
+  background-color: rgba(36, 99, 192, 0.8);
+}
+
+.lightgreen_pick {
+  background-color: rgba(45, 255, 162, 0.8);
+}
+
+.tomato_pick {
+  background-color: rgba(253, 95, 73, 0.8);
+}
+
+.darkpink_pick {
+  background-color: rgba(236, 59, 89, 0.7);
+}

@@ -1,6 +1,7 @@
 const loginForm = document.querySelector(".login-form");
 const loginInput = document.querySelector(".login-form input");
 const greeting = document.querySelector(".greeting");
+const logOut = document.querySelector(".logout");
 
 const HIDDEN_CLASS = "hidden";
 const USERNAME_KEY = "username";
@@ -26,3 +27,12 @@ if (savedUsername === null) {
 } else {
   paintGreetings(savedUsername);
 }
+
+function logOutBtn() {
+  localStorage.removeItem(USERNAME_KEY);
+  loginForm.classList.remove(HIDDEN_CLASS);
+  greeting.classList.add(HIDDEN_CLASS);
+  loginInput.value = "";
+}
+
+logOut.addEventListener("click", logOutBtn);

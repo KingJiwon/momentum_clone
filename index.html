@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/colorpick.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,15 +15,29 @@
       <div class="option_bar">
         <span class="change_background">Random Background</span>
         <span class="logout">Log Out</span>
+        <div class="pick_color">
+          <div class="color_fisrt_line">
+            <div class="white"></div>
+            <div class="lightpurple"></div>
+            <div class="blue"></div>
+          </div>
+          <div class="color_second_line">
+            <div class="lightgreen"></div>
+            <div class="tomato"></div>
+            <div class="darkpink"></div>
+          </div>
+          </div>
+        </div>
       </div>
       <form class="login-form hidden">
         <input
+          class="login-form_input"
           type="text"
           required
           placeholder="What is your name?"
           maxlength="15"
         />
-        <input type="submit" value="Log In" />
+        <input class="login-form_submit" type="submit" value="Log In" />
       </form>
       <h1 class="clock">00:00:00</h2>
       <div class="weather">
@@ -69,8 +85,8 @@
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/option_background.js"></script>
   </body>
 </html>
