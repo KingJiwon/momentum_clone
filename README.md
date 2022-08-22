@@ -11,7 +11,7 @@
 ## [How to Use]
 
 > - You can check your time and location, weather
->   https://user-images.githubusercontent.com/98508954/185854876-bc385928-f5c0-4a07-8be2-093b7649d4cb.png
+>   ![스크린샷 2022-08-22 오후 3 35 32](https://user-images.githubusercontent.com/98508954/185857721-ff302e5b-6c0f-42db-b721-1f1bb8a0d852.png)
 > - Sign in by your name or nickname
 > <!-- picture -->
 > - Then you can typing your plan and press enter to add your plan (**Month/Day** is also essential element!)
