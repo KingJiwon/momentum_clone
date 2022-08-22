@@ -4,7 +4,8 @@
 
 ## [Notice]
 
-> - HTML, CSS, Vanilla JAVASCRIPT used in this project
+> - You can update your plan with date
+> - HTML, CSS, Vanilla Javascript used in this project
 > - Github-pages → https://kingjiwon.github.io/momentum_clone/
 > - Last-update : 2022-08-22
 
