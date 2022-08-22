@@ -11,29 +11,16 @@
 ## [How to Use]
 
 > - You can check your time and location, weather
-
-<!-- picture -->
-
+> <!-- picture -->
 > - Sign in by your name or nickname
-
-<!-- picture -->
-
+> <!-- picture -->
 > - Then you can add your plan (**Month/Day** is also essential element!)
-
-<!-- picture -->
-
+> <!-- picture -->
 > - You can delete your plan by button
-
-<!-- picture -->
-
+> <!-- picture -->
 > - You can change your background randomly
-
-<!-- picture -->
-
+> <!-- picture -->
 > - If you want to sign out please click **Sign Out** button
-
-<!-- picture -->
-
+> <!-- picture -->
 > - You can pick your layout color by palette
-
-<!-- picture -->
+> <!-- picture -->
