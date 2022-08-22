@@ -5,7 +5,7 @@
 ## [Notice]
 
 > - HTML, CSS, Vanilla JAVASCRIPT used in this project
-> - Github-pages →
+> - Github-pages → https://kingjiwon.github.io/momentum_clone/
 > - Last-update : 2022-08-22
 
 ## [How to Use]
