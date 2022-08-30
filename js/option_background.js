@@ -1,10 +1,12 @@
 const change = document.querySelector(".change_background");
 const images = ["0.jpeg", "1.jpeg", "2.jpeg", "3.jpg", "4.png"];
 const bgImg = document.getElementById("background_image");
-const optionBg = document.querySelectorAll(".option_bar span");
-const loginBg = document.querySelectorAll(".login-form input");
-const todoBg = document.querySelectorAll(".todo-form input");
-const todoListBg = document.querySelector(".todo-list");
+const backgrounds = {
+  optionBg: document.querySelectorAll(".option_bar span"),
+  loginBg: document.querySelectorAll(".login-form input"),
+  todoBg: document.querySelectorAll(".todo-form input"),
+  todoListBg: document.querySelector(".todo-list"),
+};
 
 const colors = {
   white: document.querySelector(".white"),
@@ -25,30 +27,25 @@ function changeBackground(event) {
 }
 change.addEventListener("click", changeBackground);
 
-function changeColor(event) {
-  for (let i = 0; i < loginBg.length; i++) {
-    let remove = loginBg[i].classList[1];
-    loginBg[i].classList.remove(`${remove}`);
-    loginBg[i].classList.add(`${event.target.classList[0]}_pick`);
+/// function for chage background color
+function chageColorFunc(tar) {
+  for (let i = 0; i < tar.length; i++) {
+    let remove = tar[i].classList[1];
+    tar[i].classList.remove(`${remove}`);
+    tar[i].classList.add(`${event.target.classList[0]}_pick`);
   }
-  for (let i = 0; i < optionBg.length; i++) {
-    let remove = optionBg[i].classList[1];
-    optionBg[i].classList.remove(`${remove}`);
-    optionBg[i].classList.add(`${event.target.classList[0]}_pick`);
-  }
-  for (let i = 0; i < todoBg.length - 1; i++) {
-    let remove = todoBg[i].classList[1];
-    todoBg[i].classList.remove(`${remove}`);
-    todoBg[i].classList.add(`${event.target.classList[0]}_pick`);
-  }
-  const remove = todoListBg.classList[1];
-  todoListBg.classList.remove(`${remove}`);
-  todoListBg.classList.add(`${event.target.classList[0]}_pick`);
 }
 
-colors.white.addEventListener("click", changeColor);
-colors.lightpurple.addEventListener("click", changeColor);
-colors.blue.addEventListener("click", changeColor);
-colors.lightgreen.addEventListener("click", changeColor);
-colors.tomato.addEventListener("click", changeColor);
-colors.darkpink.addEventListener("click", changeColor);
+function changeColor(event) {
+  for (key in backgrounds) {
+    chageColorFunc(backgrounds[key]);
+  }
+  const remove = backgrounds.todoListBg.classList[1];
+  backgrounds.todoListBg.classList.remove(`${remove}`);
+  backgrounds.todoListBg.classList.add(`${event.target.classList[0]}_pick`);
+}
+
+/// set click event for change background
+for (key in colors) {
+  colors[key].addEventListener("click", changeColor);
+}
